@@ -1,0 +1,25 @@
+
+plugins {
+    id 'java'
+    id 'eclipse'
+    id 'application'
+}
+
+repositories {
+	mavenCentral()
+}
+
+application {
+    mainClass = 'com.getaway.challenge.ChallengeMainClass'
+}
+
+dependencies {
+
+	testImplementation 'org.junit.jupiter:junit-jupiter:6.1.1'
+	
+	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+test {
+    useJUnitPlatform()
+}
